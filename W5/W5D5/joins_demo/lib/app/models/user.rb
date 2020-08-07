@@ -19,7 +19,7 @@ class User < ApplicationRecord
   #
   # If the name of this association had been `comments`, Rails would
   # have guessed the second (`source`) association.
-  has_many :post_feedback, :through => :posts, :source => :comments
+  has_many :post_feedback, :through => :posts, :source => :comments 
 
   def n_plus_one_post_comment_counts
     posts = self.posts
